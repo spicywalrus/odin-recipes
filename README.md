@@ -1,1 +1,1 @@
-# odin-recipes
+HTML basic recipe website build. This project will help me improve my HTML formatting/structure, help build good git practices, and allow me to practice basic HTML workflows.
