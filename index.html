@@ -6,14 +6,14 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Lohk'Dhar's Diablerie</h1>
+        <h1 class="h1">Lohk'Dhar's Diablerie</h1>
         <img src="images/goblin-alchemist.png" alt="Goblin with alchemical supplies">
-        <h4>"Welcome in, patron! Please feel free to browse my wares"</h2>
+        <h4 class="quote">"Welcome in, patron! Please feel free to browse my wares"</h2>
         <h6>(but <em>don't</em> touch... still don't know where that gnome went...)</h6>
         <ul>
-            <li><a href="recipes/mandrake-mixture.html">Mandrake Mixture</a></li>
-            <li><a href="recipes/shadowfire-potion.html">Shadowfire Potion</a></li>
-            <li><a href="recipes/gorgons-breath.html"></a>Gorgon's Breath</li> 
+            <li class="potion uncommon"><a href="recipes/mandrake-mixture.html">Mandrake Mixture</a></li> <!-- Adding classes to list element vs. anchor? -->
+            <li class="potion legendary"><a class="potion legendary" href="recipes/shadowfire-potion.html">Shadowfire Potion</a></li>
+            <li class="potion legendary"><a class="potion legendary" href="recipes/gorgons-breath.html"></a>Gorgon's Breath</li> 
             <li><a href="recipes/jet-fuel-firebomb.html"></a>Jet Fuel Firebomb</li>
             <li><a href="recipes/shadow-brew.html"></a>Shadow Brew</li>
             <li><a href="recipes/swiftfoot-elixir.html"></a>Swiftfoot Elixir</li>
@@ -44,11 +44,22 @@
         <!-- Add Character pages / favorite Quotes -->
         <!-- -->
 
+        <!-- Features:
+        1. Sort list of potions/herbs by rarity/alpha.
+        2. Select herbs you have - shows which potions are available to make! (HARD)
+        3. Look up which potions have ________ herb in them.
+            -->
+
         <!-- Formatting:
         1. Fix space between quote and secondary quote
         2. Make all image sizing uniform - only use square images.
         3. Alphabatize OR by Rarity.
         4. Show available potions with xxxx ingredients.
+            -->
+
+        <!-- Figure out how to do this:
+        1. How to make image size match bounds of text i.e. Lohk's pic fit perfectly underneath title
+        2. How to make list cut off background colors - see gmbinder link for ref.
             -->
 
         <!-- Add Interactivity!! See https://criosyom.github.io/odin-recipes/ -->

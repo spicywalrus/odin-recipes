@@ -1,6 +1,13 @@
 /* HOW to make whole page background change? 
     
 */
+
+/* Type Selectors */
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+
 p {
     background-color: black;
     color: white;
@@ -8,10 +15,43 @@ p {
     font-size: medium;
 }
 
+/*  List stylings alternate with different background colors i.e. purple every other line */
+li:nth-child(even) {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: plum;
+}
+/* IMAGE Stylings */
+img {
+    width: 400px;
+    height: 400px;
+}
+
+/* HYPERlink Stylings */
+a {
+}
+
+a:link {
+}
+
+a:visited {
+    color: hsl(hue, saturation, 50%);
+}
+
+a:focus {
+}
+
+a:hover {
+}
+
+a:active {
+}
+
+
+/* Class Selectors */
 
 /* Types of Text */
 .image-text {
-    text-align: center;
+    
 } /* Places text over image*/
 
 .headline {
@@ -19,26 +59,20 @@ p {
 } /* Should put underline below hx title */
 
 .tagline {
-
+    text-align: center;
 } /* Places text as tagline of image */
 
 .h1 {
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+}  /* Problematic naming? */
 
 .quote {
     color: red;
 } /* Make slowly appear, or mumble like animal crossing */
 
-/*  List stylings alternate with different background colors i.e. purple every other line */
-.list:nth-child(even) {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: plum;
-}
-
 .potion {
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Item Rarity */
@@ -52,7 +86,6 @@ p {
 
 .rare {
     color: mediumblue;
-
 }
 
 .epic {
@@ -64,3 +97,7 @@ p {
 }
 
 /* Effects: could have animations or just colors to signify */
+
+
+
+/* Image Properties */
