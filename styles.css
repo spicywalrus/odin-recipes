@@ -1,0 +1,47 @@
+/* HOW to make whole page background change? 
+    
+*/
+p {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+/* Types of Text*/
+.image-text {
+    text-align: center;
+}
+
+.quote {
+    color: red;
+}
+
+.list {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.potion {
+
+}
+
+/* Item Rarity */
+.common {
+    color: wheat;
+}
+
+.uncommon {
+    color: forestgreen;
+}
+
+.rare {
+    color: mediumblue;
+
+}
+
+.epic {
+    color: indigo;
+}
+
+.legendary {
+    color: darkorange;
+}
