@@ -4,7 +4,7 @@
 
 /* Type Selectors */
 body{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: fantasy, Helvetica, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: black;
 }
 
@@ -22,8 +22,8 @@ li:nth-child(even) {
 }
 /* IMAGE Stylings */
 img {
-    width: 400px;
-    height: 400px;
+    width: 50px;
+    height: 50px;
 }
 
 /* HYPERlink Stylings */
@@ -47,7 +47,47 @@ a:active {
 }
 
 
-/* Class Selectors */
+/* NavBar */
+.navbar {
+    background-color: firebrick;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo img {
+    width, height: 84px;
+    margin-right: auto;
+}
+
+.header-links {
+    display: flex;
+    margin-left: auto;
+    padding: 0px 100px 0px 0px;
+    gap: 24px;
+}
+
+.header-links  a {
+    display: flex;
+    flex-basis: 400px;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Types of Text */
 .image-text {
