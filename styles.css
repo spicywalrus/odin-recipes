@@ -4,12 +4,27 @@
 
 /* visualizer border */
 
+html {
+    height: 100%;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    min-height: 100%;
+}
+
 /* Type Selectors */
-body{
+body {
     font-family: fantasy, Helvetica, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: black;
     display: flex;
     flex-flow: column;
+    min-height: 100vh;
+    min-width: fit-content;
+
+    background-color: #c4a541;
+    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
 }
 
 p {
@@ -21,56 +36,39 @@ p {
 
 /* IMAGE Stylings */
 img {
+    max-width: 200px;
+    max-height: 200px;
     width: 200px;
     height: 200px;
 
-    border: solid blue 3px;
+    box-shadow: 10px 10px 5px lightblue;
 }
-
-/* HYPERlink Stylings */
-a {
-}
-
-a:link {
-}
-
-a:visited {
-    color: hsl(hue, saturation, 50%);
-}
-
-a:focus {
-}
-
-a:hover {
-}
-
-a:active {
-}
-
 
 /* NavBar */
 .navbar {
-    background-color: firebrick;
+    background-color: #C52A3F;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0px 20px 100px;
 
-    border: solid blue 3px;
+    border-radius: 2px;
+    /* box-shadow: 10px 10px 5px lightblue; */
+
 }
 
 .header-logo  {
     display: flex;
-
 }
 
 .header-logo img {
-    max-width: 64px;
-    max-height: 64px;
+    object-fit: cover;
+    width: 100%;
+    height: 70px;
     margin-right: auto;
-
-    border: solid blue 3px;
 }
 
 .header-links {
@@ -78,52 +76,54 @@ a:active {
     margin-left: auto;
     padding: 0px 100px 0px 0px;
     gap: 24px;
-
-    border: solid blue 3px;
 }
 
 .header-links  a {
     display: flex;
+    justify-content: center;
     flex-basis: 400px;
     flex-direction: column;
     margin-right: 20px;
-
-    border: solid blue 3px;
 }
 
 /* TitleWrapper */
 .title-wrapper {
+    background-color: #C52A3F;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
     display: flex;
     justify-content: center;
-    background-color: red;
-    padding: 48px;
-
-    border: solid blue 3px;
+    padding: 12px;
 }
 
 .title-text-container  {
-  
-    border: solid blue 3px;
+    padding: 24px;
 }
 
 .title-text {
     font-size: 64px;
+    color: #EAE2DE;
+    padding: 1px 32px 0px 32px;
 
-    border: solid blue 3px;
+    border-top: solid #EAE2DE 3px;
+    border-bottom: solid #EAE2DE 3px;
+
+    text-align: center;
 }
 
 .title-tagline {
     font-size: 24px;
-
-    border: solid blue 3px;
+    color: #EAE2DE;
+    margin-top: 12px;
+    text-align: center;
 }
 
 .portrait-container {
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    border: solid blue 3px;
 }
 
 .lohk-quote {
@@ -131,30 +131,32 @@ a:active {
 }
 
 .portrait-container button {
-   background-color: yellow;
-   border-radius: 24px;
-   width: 30px;
-   height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: yellow;
+    border-radius: 24px;
+    border: none;
+    width: 30px;
+    height: 30px;
 }
 
 
 /* Skillset Section */
 
 .skills-wrapper {
-    background-color: aquamarine;
+    background-color: #c4a541;
+    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
     display: flex;
     justify-content: center;
     padding: 24px;
-
-    border: solid red 3px;
 }
 
 .skills-container {
     display: flex;
     justify-content: center;
     gap: 120px;
-
-    border: solid blue 3px;
 }
 
 .skills {
@@ -165,20 +167,17 @@ a:active {
 /* Journey Section */
 
 .journey-wrapper {
-    background-color: purple;
+    background-color: #c4a541;
+    background-image: url("https://www.transparenttextures.com/patterns/light-paper-fibers.png");
     display: flex;
     justify-content: center;
     padding: 24px;
-
-    border: solid red 3px;
 }
 
 .journey-container {
     display: flex;
     justify-content: center;
     gap: 120px;
-
-    border: solid blue 3px;
 }
 
 .info {
@@ -193,14 +192,11 @@ a:active {
 /* Footer */
 
 .footer-wrapper {
-    background-color: firebrick;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 0px 20px 100px;
-
-    border: solid blue 3px;
 }
 
 .footer-container {
@@ -211,8 +207,6 @@ a:active {
 .vial-container img  {
     width: 50px;
     height: 50px;
-
-    border: solid blue 3px;
 }
 
 .vial-container {
@@ -222,61 +216,4 @@ a:active {
 
 .vial-text  {
     position: absolute;
-    
 }
-
-
-
-
-/* Types of Text */
-.image-text {
-    
-} /* Places text over image*/
-
-.headline {
-
-} /* Should put underline below hx title */
-
-.tagline {
-    text-align: center;
-} /* Places text as tagline of image */
-
-.h1 {
-    font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}  /* Problematic naming? */
-
-.quote {
-    color: red;
-} /* Make slowly appear, or mumble like animal crossing */
-
-.potion {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-/* Item Rarity */
-.common {
-    color: wheat;
-}
-
-.uncommon {
-    color: forestgreen;
-}
-
-.rare {
-    color: mediumblue;
-}
-
-.epic {
-    color: indigo;
-}
-
-.legendary {
-    color: darkorange;
-}
-
-/* Effects: could have animations or just colors to signify */
-
-
-
-/* Image Properties */
